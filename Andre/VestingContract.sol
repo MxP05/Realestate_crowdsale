@@ -1,32 +1,39 @@
-pragma solidity ^0.8.0;
+pragma solidity ^0.5.0;
 
-// Create a contract named lending platform 
-contract LendingPlatform {
-    uint256 public lenderInterestRate; 
-    uint256 public borrowerInterestRate; 
+//Import the following library from openzeppelin 
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/IERC20.sol";
 
-    mapping(address => uint256) public deposits; // Implement mapping for each user's deposited ether
-    mapping(address => uint256) public borrowedAmount; // Implement mapping for each user's borrowed amount
-
-    // Add these variables
-    uint256 public totalDeposits; // Stores the total amount deposited by all users.
-    uint256 public totalInterestPaid; // Stores the total amount of interest paid by borrowers.
-    uint256 public platformSharePercentage = 35; // The percentage of interest that the platform will keep.
-    address payable public platformAddress; // The address of the platform that receives the percentage share of the interest.
-
-// Set the interest rates for lenders and borrowers and specify the platform address for your lending platform.
-    constructor(uint256 _lenderInterestRate, uint256 _borrowerInterestRate, address payable _platformAddress) {
-        lenderInterestRate = _lenderInterestRate;
-        borrowerInterestRate = _borrowerInterestRate;
-        platformAddress = _platformAddress; // Initialize the platform address
+// Create a contract Call LargeInvestorVesting
+contract LargeInvestorVesting {
+    IERC20 private _token;
+    
+    struct VestingSchedule {
+        uint256 amount;
+        uint256 start;
+        uint256 end;
+        uint256 released;
     }
-
-
-// Add a Function to allow users to deposit ether into the platform
- function deposit() public payable {
-        require(msg.value > 0, "Deposit amount must be greater than zero.");
-        deposits[msg.sender] += msg.value;
-        totalDeposits += msg.value; // Update the total deposits
+    
+    mapping(address => VestingSchedule) public vestingSchedules;
+    
+//Create a contructor the LargeInvestorVesting contract 
+    constructor(IERC20 token) public {
+        _token = token;
     }
-
- 
+    
+    //Add a function to depositTokens 
+    function depositTokens(address beneficiary, uint256 amount, uint256 start, uint256 end) public {
+        require(beneficiary != address(0), "Invalid beneficiary address");
+        require(amount > 0, "Invalid amount");
+        require(end > start, "Invalid vesting period");
+        
+        VestingSchedule storage schedule = vestingSchedules[beneficiary];
+        require(schedule.amount == 0, "Vesting schedule already exists");
+        
+        schedule.amount = amount;
+        schedule.start = start;
+        schedule.end = end;
+        schedule.released = 0;
+        
+        _token.transferFrom(msg.sender, address(this), amount);
+    }
