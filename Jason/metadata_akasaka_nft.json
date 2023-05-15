@@ -1,0 +1,38 @@
+{"attributes": [
+    {
+      "building_type": "Building Type",
+      "value": "Residential Land and Building"
+    },
+    {
+        "Region": "Type of Area",
+        "value": "Commercial"
+    },
+    {
+        "Prefecture": "City",
+        "value": "Tokyo"
+      },
+    {
+      "municipality": "Municipality",
+      "value": "Minato Ward"
+    },
+    {
+        "DistrictName": "District Name",
+        "value": "Akasaka"
+    },
+    {
+        "TimeNearestStation": "Time to Nearest Train Station (minutes)",
+        "value": "4.0"
+    },
+    {
+        "CityPlanning": "Zone Type",
+        "value": "Commercial"
+    },
+    {
+        "BuildingValue": "Total Building Value USD",
+        "value": "$555,100,000.00"
+    }
+  ],
+  "description": "Another big building",
+  "image": "ipfs://QmRDdHXCWWP7u4RapG28ikgqNrGDc5icwpWhZYFCsw6C3D",
+  "blank deed PoC": "ipfs://QmQfAHuLV9ptSwxSShdQmkLYA4aoMUeJVesKXVepjVztvH"
+}
