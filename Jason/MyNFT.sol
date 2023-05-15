@@ -13,7 +13,7 @@ contract MyNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 //name and symbol NFT
-    constructor() ERC721("PropertyInfoNFT", "PIN") {}
+    constructor() ERC721("ChiyodaNFT", "CYA") {}
 
     function mintNFT(address recipient, string memory tokenURI)
         public onlyOwner
