@@ -1,0 +1,39 @@
+
+{"attributes": [
+    {
+      "building_type": "Building Type",
+      "value": "Residential Land"
+    },
+    {
+        "Region": "Type of Area",
+        "value": "Residential"
+    },
+    {
+        "Prefecture": "City",
+        "value": "Tokyo"
+      },
+    {
+      "municipality": "Municipality",
+      "value": "Katsushika Ward"
+    },
+    {
+        "DistrictName": "District Name",
+        "value": "Niijuku"
+    },
+    {
+        "TimeNearestStation": "Time to Nearest Train Station (minutes)",
+        "value": "9.0"
+    },
+    {
+        "CityPlanning": "Zone Type",
+        "value": "Industrial"
+    },
+    {
+        "BuildingValue": "Total Building Value USD",
+        "value": "$409,500,000.00"
+    }
+  ],
+  "description": "A big building",
+  "image": "ipfs://QmfDyqr7W7nKp4uMFqhgtRujAMo9Sh9XyzWc34E9PFS7zz",
+  "blank deed PoC": "ipfs://QmQfAHuLV9ptSwxSShdQmkLYA4aoMUeJVesKXVepjVztvH"
+}
