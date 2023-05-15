@@ -13,7 +13,7 @@ const web3 = createAlchemyWeb3(API_URL);
 //grab contract abi. hardhat automatically generates abi and saves in MyNft.json file
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 //add recipient contract address
-const contractAddress = "0xA4FE444B0451408D92406E8e42cc05e77459ec37";
+const contractAddress = "0xb23991f58B29bB2a29AB8C849e8083D30379b19E";
 //use web3 contract method to create contract w/ abi and address
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 //view contract abi
@@ -60,6 +60,6 @@ async function mintNFT(tokenURI) {
 }
 
 //mint nft with metadata from pinata
-mintNFT("ipfs://QmeG9UaWgNein2XMax7KSsBoxx2Q2mNqQh6qPKLK9VttsG")
+mintNFT("ipfs://QmQLZ75xSL9EvdMGkesuNSebMmFXEzpxLK4nLFooqvhNTz")
 
 //NFT deployed and minted on eth bchain!!
