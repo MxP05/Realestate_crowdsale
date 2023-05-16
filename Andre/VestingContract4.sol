@@ -62,3 +62,16 @@ contract LargeInvestorVesting {
             return (schedule.amount * (block.timestamp - schedule.start)) / (schedule.end - schedule.start) - schedule.released;
         }
     }
+    
+    // Add function to check the vested amount of tokens 
+    function vestedAmount(address beneficiary) public view returns (uint256) {
+        VestingSchedule storage schedule = vestingSchedules[beneficiary];
+        if (block.timestamp < schedule.start) {
+            return 0;
+        } else if (block.timestamp >= schedule.end) {
+            return schedule.amount;
+        } else {
+            return (schedule.amount * (block.timestamp - schedule.start)) / (schedule.end - schedule.start);
+        }
+    }
+}
