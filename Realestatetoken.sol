@@ -60,7 +60,7 @@ contract RealEstateTokenCrowdsaleDeployer {
     //store token's address in public variable
     realestate_token_address = address(token);
     //create token crowdsale and include token
-    RealEstateTokenCrowdsale realestate_token_crowdsale = new RealEstateTokenCrowdsale(1, wallet, token, goal);
+    RealEstateTokenCrowdsale realestate_token_crowdsale = new RealEstateTokenCrowdsale(300000000000000000, wallet, token, goal);
     realestate_token_crowdsale_address = address(realestate_token_crowdsale);
     // make the crowdsale contract minter, then deployer contract renounces minter role
     token.addMinter(realestate_token_crowdsale_address);
