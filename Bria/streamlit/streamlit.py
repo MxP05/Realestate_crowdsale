@@ -25,6 +25,8 @@
 
 ################################################################################
 # Imports
+from crypto_wallet import generate_account, get_balance, send_transaction
+import json
 import streamlit as st
 from dataclasses import dataclass
 from typing import Any, List
@@ -75,11 +77,20 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # * `generate_account`
 # * `get_balance`
 # * `send_transaction`
+akaska_dict = {}
+with open("../../Jason/metadata_akasaka_nft.json", 'r') as file:
+    json_data = json.loads(file.read())["attributes"]
+    for i in json_data:
+        i_keys = list(i.keys())
+        akaska_dict[i_keys[0]] = i["value"]
+        # for j in i_keys:
+        #    akaska_dict[j] = i[j]
+# st.sidebar.write(akaska_dict)
+    # print(build_data)
 
 # @TODO:
 # From `crypto_wallet.py import the functions generate_account, get_balance,
 #  and send_transaction
-from crypto_wallet import generate_account, get_balance, send_transaction
 
 ################################################################################
 # Fintech Finder Candidate Information
@@ -93,14 +104,14 @@ candidate_database = {
 }
 
 # A list of the FinTech Finder candidates first names
-people = ["Akasaka", "Yombancho", "Niijuku"]
+district_name = ["Akasaka", "Yombancho", "Niijuku"]
 
 
-def get_people(w3):
+def get_district_name(w3):
     """Display the database of Fintech Finders candidate information."""
     db_list = list(candidate_database.values())
 
-    for number in range(len(people)):
+    for number in range(len(district_name)):
         st.image(db_list[number][4], width=200)
         st.write("Name: ", db_list[number][0])
         st.write("Ethereum Account Address: ", db_list[number][1])
@@ -110,6 +121,7 @@ def get_people(w3):
 
 ################################################################################
 # Streamlit Code
+
 
 # Streamlit application headings
 st.markdown("# Fintech Finder!")
@@ -129,7 +141,7 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 
 # @TODO:
 #  Call the `generate_account` function and save it as the variable `account`
-account=generate_account()
+account = generate_account()
 
 ##########################################
 
@@ -145,40 +157,64 @@ st.sidebar.write(account.address)
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-st.sidebar.write(get_balance(w3,account.address))
+st.sidebar.write(get_balance(w3, account.address))
 
 
 ##########################################
 
 # Create a select box to chose a FinTech Hire candidate
-person = st.sidebar.selectbox('Select a Person', people)
+district = st.sidebar.selectbox('Select a district', district_name)
+
 
 # Create a input field to record the number of hours the candidate worked
 hours = st.sidebar.number_input("Number of Hours")
+dict_to_display_district = {
+    "Akasaka": akaska_dict,
+    "Yombancho": "i am testing this one",
+    "Niijuku": "this is niijuku"
+}
+st.sidebar.markdown("## District")
+st.sidebar.write(dict_to_display_district[district])
 
-st.sidebar.markdown("## Candidate Name, Hourly Rate, and Ethereum Address")
+
+# How many tokens
+to_buy_tokens = 0
+to_buy_tokens = st.sidebar.number_input(
+    "How many tokens do you want to buy?", min_value=0)
+st.sidebar.write(to_buy_tokens)
+
+token_cost = 10
+total_cost_token = int(to_buy_tokens)*int(token_cost)
+st.sidebar.write(f"The cost of buying {token_cost} is {total_cost_token}")
+
+building_value_akasaka = akaska_dict["BuildingValue"].replace(
+    "$", "").replace(",", "").replace(".00", "")
+
+st.sidebar.write(
+    f"yoour pct ownershuip is {total_cost_token/int(building_value_akasaka)}")
+
 
 # Identify the FinTech Hire candidate
-candidate = candidate_database[person][0]
+#candidate = candidate_database[person][0]
 
 # Write the Fintech Finder candidate's name to the sidebar
-st.sidebar.write(candidate)
+# st.sidebar.write(candidate)
 
 # Identify the FinTech Finder candidate's hourly rate
-hourly_rate = candidate_database[person][3]
+#hourly_rate = candidate_database[person][3]
 
 # Write the inTech Finder candidate's hourly rate to the sidebar
-st.sidebar.write(hourly_rate)
+# st.sidebar.write(hourly_rate)
 
 # Identify the FinTech Finder candidate's Ethereum Address
-candidate_address = candidate_database[person][1]
+#candidate_address = candidate_database[person][1]
 
 # Write the inTech Finder candidate's Ethereum Address to the sidebar
-st.sidebar.write(candidate_address)
+# st.sidebar.write(candidate_address)
 
 # Write the Fintech Finder candidate's name to the sidebar
 
-wage=st.sidebar.markdown("## Total Wage in Ether")
+wage = st.sidebar.markdown("## Total Wage in Ether")
 
 ################################################################################
 # Step 2: Sign and Execute a Payment Transaction
@@ -191,14 +227,14 @@ wage=st.sidebar.markdown("## Total Wage in Ether")
 # completes these steps, the application will calculate the amount that the
 # worker will be paid in ether. To do so, complete the following steps:
 
-    # * Write the equation that calculates the candidate’s wage. This equation
-    #  should assess the candidate’s hourly rate from the candidate database
-    # (`candidate_database[person][3]`) and then multiply this hourly rate by
-    # the value of the `hours` variable. Save this calculation’s output as a
-    # variable named `wage`.
+# * Write the equation that calculates the candidate’s wage. This equation
+#  should assess the candidate’s hourly rate from the candidate database
+# (`candidate_database[person][3]`) and then multiply this hourly rate by
+# the value of the `hours` variable. Save this calculation’s output as a
+# variable named `wage`.
 
-    # * Write the `wage` variable to the Streamlit sidebar by
-    # using `st.sidebar.write`.
+# * Write the `wage` variable to the Streamlit sidebar by
+# using `st.sidebar.write`.
 
 # 2. Now that the application can calculate a candidate’s wage, write the code
 # that will allow a customer (you, in this case) to send an Ethereum blockchain
@@ -208,21 +244,21 @@ wage=st.sidebar.markdown("## Total Wage in Ether")
 # the `send_transaction` function (which you imported from the `crypto_wallet`
 # script file). Inside the `if` statement, add the following functionality:
 
-    # * Call the `send_transaction()` function and pass it three parameters:
-        # - Your Ethereum `account` information. (Remember that this `account`
-        # instance was created when the `generate_account` function was called.)
-        #  From the `account` instance, the application will be able to access the
-        #  `account.address` information that is needed to populate the `from` data
-        # attribute in the raw transaction.
-        #- The `candidate_address` (which will be created and identified in the
-        # sidebar when a customer selects a candidate). This will populate the `to`
-        # data attribute in the raw transaction.
-        # - The `wage` value. This will be passed to the `toWei` function to
-        # determine the wei value of the payment in the raw transaction.
+# * Call the `send_transaction()` function and pass it three parameters:
+# - Your Ethereum `account` information. (Remember that this `account`
+# instance was created when the `generate_account` function was called.)
+#  From the `account` instance, the application will be able to access the
+#  `account.address` information that is needed to populate the `from` data
+# attribute in the raw transaction.
+# - The `candidate_address` (which will be created and identified in the
+# sidebar when a customer selects a candidate). This will populate the `to`
+# data attribute in the raw transaction.
+# - The `wage` value. This will be passed to the `toWei` function to
+# determine the wei value of the payment in the raw transaction.
 
-    # * Save the transaction hash that the `send_transaction` function returns
-    # as a variable named `transaction_hash`, and have it display on the
-    # application’s web interface.
+# * Save the transaction hash that the `send_transaction` function returns
+# as a variable named `transaction_hash`, and have it display on the
+# application’s web interface.
 
 ##########################################
 # Step 2 - Part 1:
@@ -238,28 +274,26 @@ wage=st.sidebar.markdown("## Total Wage in Ether")
 # rate from the candidate database (`candidate_database[person][3]`) by the
 # value of the `hours` variable
 
-wage =hourly_rate * hours
-
-
+#wage =hourly_rate * hours
 
 
 # @TODO
 # Write the `wage` calculation to the Streamlit sidebar
-st.sidebar.write("the wage is", hourly_rate,"multiplied by", hours,"which is equal to", wage)
+#st.sidebar.write("the wage is", hourly_rate,"multiplied by", hours,"which is equal to", wage)
 
 ##########################################
 # Step 2 - Part 2:
 # * Call the `send_transaction` function and pass it three parameters:
-    # - Your Ethereum `account` information. (Remember that this `account`
-    # instance was created when the `generate_account` function was called.)
-    #  From the `account` instance, the application will be able to access the
-    #  `account.address` information that is needed to populate the `from` data
-    # attribute in the raw transaction.
-    #- The `candidate_address` (which will be created and identified in the
-    # sidebar when a customer selects a candidate). This will populate the `to`
-    # data attribute in the raw transaction.
-    # - The `wage` value. This will be passed to the `toWei` function to
-    # determine the wei value of the payment in the raw transaction.
+# - Your Ethereum `account` information. (Remember that this `account`
+# instance was created when the `generate_account` function was called.)
+#  From the `account` instance, the application will be able to access the
+#  `account.address` information that is needed to populate the `from` data
+# attribute in the raw transaction.
+# - The `candidate_address` (which will be created and identified in the
+# sidebar when a customer selects a candidate). This will populate the `to`
+# data attribute in the raw transaction.
+# - The `wage` value. This will be passed to the `toWei` function to
+# determine the wei value of the payment in the raw transaction.
 
 # * Save the transaction hash that the `send_transaction` function returns as a
 # variable named `transaction_hash`, and have it display on the application’s
@@ -272,21 +306,21 @@ if st.sidebar.button("Send Transaction"):
     # Call the `send_transaction` function and pass it 3 parameters:
     # Your `account`, the `candidate_address`, and the `wage` as parameters
     # Save the returned transaction hash as a variable named `transaction_hash`
-    transaction_hash=send_transaction(w3,account,candidate_address,wage)
-    print(transaction_hash)
+    # transaction_hash=send_transaction(w3,account,candidate_address,wage)
+    # print(transaction_hash)
 
     # Markdown for the transaction hash
     st.sidebar.markdown("#### Validated Transaction Hash")
 
     # Write the returned transaction hash to the screen
-    st.sidebar.write(transaction_hash)
+    # st.sidebar.write(transaction_hash)
 
     # Celebrate your successful payment
     st.balloons()
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
-get_people(w3)
+get_district_name(w3)
 
 ################################################################################
 # Step 3: Inspect the Transaction
@@ -315,11 +349,11 @@ get_people(w3)
 # application sidebar.
 
 # 5. Navigate to the Ganache accounts tab and locate your account (index 0).
-    # * Take a screenshot of the address, balance, and transaction (TX) count.
-    # Save this screenshot to the README.md file of your GitHub repository for
-    #  this Challenge assignment.
+# * Take a screenshot of the address, balance, and transaction (TX) count.
+# Save this screenshot to the README.md file of your GitHub repository for
+#  this Challenge assignment.
 
 # 6. Navigate to the Ganache transactions tab and locate the transaction.
-    # * Click the transaction and take a screenshot of it.
-    # Save this screenshot to the README.md file of your GitHub repository for
-    #  this Challenge assignment.
+# * Click the transaction and take a screenshot of it.
+# Save this screenshot to the README.md file of your GitHub repository for
+#  this Challenge assignment.
