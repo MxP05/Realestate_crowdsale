@@ -1,7 +1,7 @@
 # **Real Estate Tokenization Project**
 
-### The goal of this project is to connect owners of real estate properties with a community of lenders, borrowers, and real estate micro-investors in an effort to make real estate investment accessible through a fractional ownership (FO) tokenized system. Ideally, the real estate investment properties will not be inhabited by the owner(s), but instead will serve as short- or long-term rentals, providing token owners with a passive income in addition to their short- or long-term investments in the real estate property. In addition to expanding investment opportunities and eliminating real estate middle-men, this system would allow for expanded democratization of real estate prices. Theoretically, the minted tokens could also serve as a fiat currency backed by the value of the property they represent. 
-### We elected to pursue a FO tokenization because creating and entire asset (EA) ownership token would require turning a property deed into its own NFT, which is an undeveloped asset class. However, we do aim to store property deeds within an IPFS connected to the token. Tokens can be transferred, but the deed cannot, inhibiting development of an EA token.
+### The goal of this project is to connect owners of real estate properties with a community of real estate micro-investors in an effort to make real estate investment accessible through a fractional ownership (FO) tokenized system. Tokenizing the real estate investment process is mutually beneficial for property owners and investors as it eliminates middle-man expenses such as brokers. In addition to expanding investment opportunities and eliminating real estate middle-men, this system would allow for expanded democratization of real estate prices. Theoretically, the minted tokens could also serve as a fiat currency backed by the value of the property they represent. 
+### We elected to pursue a FO tokenization because creating and entire asset (EA) ownership token would require turning a property deed into its own NFT, which is an undeveloped asset class. However, in this application we do store property info metadata and ownership deeds within an IPFS. The deployed contracts have been verified through Etherscan. Including these verified NFTs allows investors to confirm that the tokens they are purchasing are representative of fractional ownership of a specific property.  While the real estate tokens can be transferred, the property-specific NFTs cannot, preventing complications that may arise with an EA ownership token.
 ### [Source](https://www.fool.com/investing/stock-market/market-sectors/financials/non-fungible-tokens/nft-real-estate/).
 ---
 # **Review of Literature:**
@@ -17,4 +17,21 @@
 
 ### While Yieldstreet does not present opportunities for tokenization of real estate, they do provide users with the opportunity for real estate micro-investments with an investment minimum of $5,000.00. Yieldstreet is a private real estate investment fund, but it does provide an opportunity for users to obtain partial ownership of a specific property. However, Yieldsreet serves as strictly an investment platform, and does not create alternative income streams or allow for easy transition between ownership of properties. As a more conventional real estate investment fund, they are also subject to conventional real estate fees for purchase of properties. Their site includes the useful insight that real estate ownership is an excellent hedge against inflation as “US property prices and income have historically outpaced inflation.”
 [For more on Yieldstreet:](https://www.yieldstreet.com/real-estate-investing/?ad_id=652726043019&adset_id=145388436923&campaign_id=19643999464&campaign_type=search&g_acctid=323-576-2402&g_adgroupid=145388436923&g_adid=652726043019&g_adtype=search&g_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&g_campaignid=19643999464&g_keyword=realty%20investment&g_keywordid=kwd-308775751137&g_network=g&hdlt_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&hdlt_source=google&keyword=realty%20investment&matchtype=p&medium=cpc&placement=g&utm_campaign=NonBrand_Real%20Estate_Realty_Tier%201_PM&utm_content=responsivead&utm_medium=cpc&utm_source=Google_Search&utm_term=realty%20investment&gad=1&gclid=Cj0KCQjwu-KiBhCsARIsAPztUF16Ra0yrt51x4GW-9h2oZ6pL9mKx9prUyMxvFeaSKr1FFqX5FgYOzAaAoCMEALw_wcB)
+---
+# **Incorporated Technologies and Libraries**
 
+## **NFT Development**
+
+### **Alchemy:**
+
+### **Sepiola Test Network:**
+
+### **Node.js:**
+
+### **Hardhat:**
+
+### **Ethers Library:**
+
+### **Etherscan:**
+
+### **Metamask:**
