@@ -40,4 +40,6 @@
 
 ### **Metamask:** For storing eth, NFTs, and creating private key to sign transactions in NFT minting.
 
-### **Pinata:** Used to store configured metadata of NFTs in IPFS. Stores property deed pdfs, building images, property-specific info. Provided hashed CIDs of metadata in IPFS included in NFT minting. Investors can view metadata stored with Pinata.
+### **Pinata:** Used to store configured metadata of NFTs in IPFS. Stores property deed pdfs, building images, property-specific info. Provided hashed CIDs of metadata in IPFS included in NFT minting. Investors can view metadata stored with Pinata. It should be noted that while the NFT properties are in Tokyo, the deeds in the NFT metadata are for New York. Japan does not have detailed legal requirements for transfer of property ownership. These deeds are included for application proof of concept.
+
+[Japan Real Estate Law:](https://www.dlapiperrealworld.com/law/index.html?t=sale-and-purchase&s=contents-of-a-contract&c=JP)
