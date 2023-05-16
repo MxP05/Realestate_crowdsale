@@ -87,6 +87,19 @@ with open("../../Jason/metadata_akasaka_nft.json", 'r') as file:
         #    akaska_dict[j] = i[j]
 # st.sidebar.write(akaska_dict)
     # print(build_data)
+    chiyoda_dict = {}
+    with open("../../Jason/metadata_chiyoda_nft.json", 'r') as file:
+        json_data = json.loads(file.read())["attributes"]
+        for i in json_data:
+            i_keys = list(i.keys())
+            chiyoda_dict[i_keys[0]] = i["value"]
+
+    niijuku_dict = {}
+    with open("../../Jason/metadata_niijuku_nft.json", 'r') as file:
+        json_data = json.loads(file.read())["attributes"]
+        for i in json_data:
+            i_keys = list(i.keys())
+            niijuku_dict[i_keys[0]] = i["value"]
 
 # @TODO:
 # From `crypto_wallet.py import the functions generate_account, get_balance,
@@ -114,9 +127,9 @@ def get_district_name(w3):
     for number in range(len(district_name)):
         st.image(db_list[number][4], width=200)
         st.write("Name: ", db_list[number][0])
-        st.write("Ethereum Account Address: ", db_list[number][1])
-        st.write("FinTech Finder Rating: ", db_list[number][2])
-        st.write("Hourly Rate per Ether: ", db_list[number][3], "eth")
+        # st.write("Ethereum Account Address: ", db_list[number][1])
+        st.write("Real Estate Ratings: ", db_list[number][2])
+        # st.write("Hourly Rate per Ether: ", db_list[number][3], "eth")
         st.text(" \n")
 
 ################################################################################
@@ -124,14 +137,14 @@ def get_district_name(w3):
 
 
 # Streamlit application headings
-st.markdown("# Fintech Finder!")
-st.markdown("## Hire A Fintech Professional!")
+st.markdown("# Real Estate Finder!")
+st.markdown("## Invest in Real Estate!")
 st.text(" \n")
 
 ################################################################################
 # Streamlit Sidebar Code - Start
 
-st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
+# st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 
 ##########################################
 # Step 1 - Part 4:
@@ -146,7 +159,7 @@ account = generate_account()
 ##########################################
 
 # Write the client's Ethereum account address to the sidebar
-st.sidebar.write(account.address)
+# st.sidebar.write(account.address)
 
 ##########################################
 # Step 1 - Part 5:
@@ -157,7 +170,7 @@ st.sidebar.write(account.address)
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-st.sidebar.write(get_balance(w3, account.address))
+# st.sidebar.write(get_balance(w3, account.address))
 
 
 ##########################################
@@ -167,11 +180,11 @@ district = st.sidebar.selectbox('Select a district', district_name)
 
 
 # Create a input field to record the number of hours the candidate worked
-hours = st.sidebar.number_input("Number of Hours")
+# hours = st.sidebar.number_input("Number of Hours")
 dict_to_display_district = {
     "Akasaka": akaska_dict,
-    "Yombancho": "i am testing this one",
-    "Niijuku": "this is niijuku"
+    "Yombancho": chiyoda_dict,
+    "Niijuku": niijuku_dict
 }
 st.sidebar.markdown("## District")
 st.sidebar.write(dict_to_display_district[district])
@@ -189,9 +202,19 @@ st.sidebar.write(f"The cost of buying {token_cost} is {total_cost_token}")
 
 building_value_akasaka = akaska_dict["BuildingValue"].replace(
     "$", "").replace(",", "").replace(".00", "")
+building_value_chiyoda = chiyoda_dict["BuildingValue"].replace(
+"$", "").replace(",", "").replace(".00", "")
+building_value_niijuku = niijuku_dict["BuildingValue"].replace(
+"$", "").replace(",", "").replace(".00", "")
 
 st.sidebar.write(
-    f"yoour pct ownershuip is {total_cost_token/int(building_value_akasaka)}")
+    f"your pct ownershuip in Akasaka building is {total_cost_token/int(building_value_akasaka)}")
+st.sidebar.write(
+    f"your pct ownershuip in Chiyoda building is {total_cost_token/int(building_value_chiyoda)}")
+st.sidebar.write(
+    f"your pct ownership in Niijuku is {total_cost_token/int(building_value_niijuku)}")
+
+
 
 
 # Identify the FinTech Hire candidate
@@ -214,7 +237,7 @@ st.sidebar.write(
 
 # Write the Fintech Finder candidate's name to the sidebar
 
-wage = st.sidebar.markdown("## Total Wage in Ether")
+# wage = st.sidebar.markdown("## Total Wage in Ether")
 
 ################################################################################
 # Step 2: Sign and Execute a Payment Transaction
@@ -300,7 +323,7 @@ wage = st.sidebar.markdown("## Total Wage in Ether")
 # web interface.
 
 
-if st.sidebar.button("Send Transaction"):
+# if st.sidebar.button("Send Transaction"):
 
     # @TODO
     # Call the `send_transaction` function and pass it 3 parameters:
@@ -310,13 +333,13 @@ if st.sidebar.button("Send Transaction"):
     # print(transaction_hash)
 
     # Markdown for the transaction hash
-    st.sidebar.markdown("#### Validated Transaction Hash")
+    # st.sidebar.markdown("#### Validated Transaction Hash")
 
     # Write the returned transaction hash to the screen
     # st.sidebar.write(transaction_hash)
 
     # Celebrate your successful payment
-    st.balloons()
+    # st.balloons()
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
