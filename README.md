@@ -20,18 +20,24 @@
 ---
 # **Incorporated Technologies and Libraries**
 
-## **NFT Development**
+## **NFT Development:** NFTs developed using the ethereum.org developer tutorial withing the ERC721 protocol. 
 
-### **Alchemy:**
+[Ethereum NFT Dev Tutorial:](https://ethereum.org/ca/developers/tutorials/how-to-write-and-deploy-an-nft/)
 
-### **Sepiola Test Network:**
+### **OpenZeppelin:** Contracts for ERC721 implementation in NFT development.
 
-### **Node.js:**
+### **Alchemy:** Used to create real estate NFTs. Connected to Sepliola test net. Alchemy used for API key in .env file.
 
-### **Hardhat:**
+### **Sepiola Test Network:** Test network for execution of transactions related to NFT development. Connected to Metamask to present Sepiola Eth and NFTs in wallet and allow for minting of NFTs on test network. Sepiola also provided the eth faucet for the project development. 
 
-### **Ethers Library:**
+### **Node.js:** Used for running javascript programs.
 
-### **Etherscan:**
+### **Hardhat:**Tells project about dependencies and plug-ins. 
 
-### **Metamask:**
+### **Ethers:** Library for making Eth requests. Ethers plugin used for contract deployment.
+
+### **Etherscan:** View and verify smart contract deployment, NFT minting, transaction details. 
+
+### **Metamask:** For storing eth, NFTs, and creating private key to sign transactions in NFT minting.
+
+### **Pinata:** Used to store configured metadata of NFTs in IPFS. Stores property deed pdfs, building images, property-specific info. Provided hashed CIDs of metadata in IPFS included in NFT minting. Investors can view metadata stored with Pinata.
