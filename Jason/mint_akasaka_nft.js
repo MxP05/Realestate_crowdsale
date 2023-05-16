@@ -11,9 +11,9 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const {createAlchemyWeb3} = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(API_URL);
 //grab contract abi. hardhat automatically generates abi and saves in MyNft.json file
-const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
+const contract = require("../artifacts/contracts/AkasakaNFT.sol/MyNFT.json");
 //add recipient contract address
-const contractAddress = "0xb23991f58B29bB2a29AB8C849e8083D30379b19E";
+const contractAddress = "0x7D9E54D03214F81A44767510eF46e0a2D84e6b47";
 //use web3 contract method to create contract w/ abi and address
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 //view contract abi
