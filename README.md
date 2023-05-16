@@ -20,7 +20,7 @@
 ---
 # **Incorporated Technologies and Libraries**
 
-## **NFT Development:** NFTs developed using the ethereum.org developer tutorial withing the ERC721 protocol. 
+## **NFT Development:** NFTs developed using the ethereum.org developer tutorial and ERC721 protocols. 
 
 [Ethereum NFT Dev Tutorial:](https://ethereum.org/ca/developers/tutorials/how-to-write-and-deploy-an-nft/)
 
