@@ -32,7 +32,7 @@
 
 ### **Node.js:** Used for running javascript programs.
 
-### **Hardhat:**Tells project about dependencies and plug-ins. 
+### **Hardhat:** Tells project about dependencies and plug-ins. 
 
 ### **Ethers:** Library for making Eth requests. Ethers plugin used for contract deployment.
 
