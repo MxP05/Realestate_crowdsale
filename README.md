@@ -43,3 +43,15 @@
 ### **Pinata:** Used to store configured metadata of NFTs in IPFS. Stores property deed pdfs, building images, property-specific info. Provided hashed CIDs of metadata in IPFS included in NFT minting. Investors can view metadata stored with Pinata. It should be noted that while the NFT properties are in Tokyo, the deeds in the NFT metadata are for New York. Japan does not have detailed legal requirements for transfer of property ownership. These deeds are included for application proof of concept.
 
 [Japan Real Estate Law:](https://www.dlapiperrealworld.com/law/index.html?t=sale-and-purchase&s=contents-of-a-contract&c=JP)
+---
+
+# **Next Steps:** 
+
+### Address SEC regulations for ICO
+
+### Develop automated process to get real estate token owners portion of rent to provide stream of passive income in addition to investment income.
+
+### Create lender/borrower platform to permit loans for coin purchase with APR and APY determined by machine learning programs.
+
+### Complete vested smart contract for real estate tokens.
+
