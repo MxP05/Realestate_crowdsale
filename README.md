@@ -11,18 +11,18 @@
 ## **DigiShares:**
 
 ### Though not yet fully functional, Digishares addresses some of the problems we are attempting to solve. Their platform allows real estate owners to tokenize their property and create a crowdfunding platform. The minted tokens are “compatible with exchanges” and use “audited smart contracts” and electronic signatures to make exchanges. They also claim to have shareholder meetings and votes, but refrain from expanding on the functional process. A future version of our application would try to incorporate this functionality as well. Where our idea differs from DigiShares is with an incorporated lending market, which allows users to acquire loans to purchase tokens, provided the borrower meets loan criteria. We also have a primary focus on tokenizing rental properties. Thus, our application creates two additional means of passive income for users: lenders make money by loaning Eth and borrowers make money by retaining a portion of the rent paid to their property. 
-[For more on DigiShares:](https://digishares.io/real-estate-tokenization?utm_feeditemid=&utm_device=c&utm_term=how%20to%20tokenize%20property&utm_source=google&utm_medium=ppc&utm_campaign=USA+%2B+Canada+-+v3&hsa_cam=17322637350&hsa_grp=142284528212&hsa_mt=b&hsa_src=g&hsa_ad=599963647351&hsa_acc=3998698433&hsa_net=adwords&hsa_kw=how%20to%20tokenize%20property&hsa_tgt=kwd-1187718903723&hsa_ver=3&gad=1&gclid=Cj0KCQjwu-KiBhCsARIsAPztUF2g2h5j501tbDSomwqYZwEzQ1cokxyvhjV5rlsQ3jVTHpUoA2Z5UBYaAhkxEALw_wcB)
+### [For more on DigiShares:](https://digishares.io/real-estate-tokenization?utm_feeditemid=&utm_device=c&utm_term=how%20to%20tokenize%20property&utm_source=google&utm_medium=ppc&utm_campaign=USA+%2B+Canada+-+v3&hsa_cam=17322637350&hsa_grp=142284528212&hsa_mt=b&hsa_src=g&hsa_ad=599963647351&hsa_acc=3998698433&hsa_net=adwords&hsa_kw=how%20to%20tokenize%20property&hsa_tgt=kwd-1187718903723&hsa_ver=3&gad=1&gclid=Cj0KCQjwu-KiBhCsARIsAPztUF2g2h5j501tbDSomwqYZwEzQ1cokxyvhjV5rlsQ3jVTHpUoA2Z5UBYaAhkxEALw_wcB)
 
 ## **Yieldstreet:**
 
 ### While Yieldstreet does not present opportunities for tokenization of real estate, they do provide users with the opportunity for real estate micro-investments with an investment minimum of $5,000.00. Yieldstreet is a private real estate investment fund, but it does provide an opportunity for users to obtain partial ownership of a specific property. However, Yieldsreet serves as strictly an investment platform, and does not create alternative income streams or allow for easy transition between ownership of properties. As a more conventional real estate investment fund, they are also subject to conventional real estate fees for purchase of properties. Their site includes the useful insight that real estate ownership is an excellent hedge against inflation as “US property prices and income have historically outpaced inflation.”
-[For more on Yieldstreet:](https://www.yieldstreet.com/real-estate-investing/?ad_id=652726043019&adset_id=145388436923&campaign_id=19643999464&campaign_type=search&g_acctid=323-576-2402&g_adgroupid=145388436923&g_adid=652726043019&g_adtype=search&g_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&g_campaignid=19643999464&g_keyword=realty%20investment&g_keywordid=kwd-308775751137&g_network=g&hdlt_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&hdlt_source=google&keyword=realty%20investment&matchtype=p&medium=cpc&placement=g&utm_campaign=NonBrand_Real%20Estate_Realty_Tier%201_PM&utm_content=responsivead&utm_medium=cpc&utm_source=Google_Search&utm_term=realty%20investment&gad=1&gclid=Cj0KCQjwu-KiBhCsARIsAPztUF16Ra0yrt51x4GW-9h2oZ6pL9mKx9prUyMxvFeaSKr1FFqX5FgYOzAaAoCMEALw_wcB)
+### [For more on Yieldstreet:](https://www.yieldstreet.com/real-estate-investing/?ad_id=652726043019&adset_id=145388436923&campaign_id=19643999464&campaign_type=search&g_acctid=323-576-2402&g_adgroupid=145388436923&g_adid=652726043019&g_adtype=search&g_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&g_campaignid=19643999464&g_keyword=realty%20investment&g_keywordid=kwd-308775751137&g_network=g&hdlt_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&hdlt_source=google&keyword=realty%20investment&matchtype=p&medium=cpc&placement=g&utm_campaign=NonBrand_Real%20Estate_Realty_Tier%201_PM&utm_content=responsivead&utm_medium=cpc&utm_source=Google_Search&utm_term=realty%20investment&gad=1&gclid=Cj0KCQjwu-KiBhCsARIsAPztUF16Ra0yrt51x4GW-9h2oZ6pL9mKx9prUyMxvFeaSKr1FFqX5FgYOzAaAoCMEALw_wcB)
 ---
 # **Incorporated Technologies and Libraries**
 
 ## **NFT Development:** NFTs developed using the ethereum.org developer tutorial and ERC721 protocols. 
 
-[Ethereum NFT Dev Tutorial:](https://ethereum.org/ca/developers/tutorials/how-to-write-and-deploy-an-nft/)
+### [Ethereum NFT Dev Tutorial:](https://ethereum.org/ca/developers/tutorials/how-to-write-and-deploy-an-nft/)
 
 ### **OpenZeppelin:** Contracts for ERC721 implementation in NFT development.
 
@@ -42,7 +42,7 @@
 
 ### **Pinata:** Used to store configured metadata of NFTs in IPFS. Stores property deed pdfs, building images, property-specific info. Provided hashed CIDs of metadata in IPFS included in NFT minting. Investors can view metadata stored with Pinata. It should be noted that while the NFT properties are in Tokyo, the deeds in the NFT metadata are for New York. Japan does not have detailed legal requirements for transfer of property ownership. These deeds are included for application proof of concept.
 
-[Japan Real Estate Law:](https://www.dlapiperrealworld.com/law/index.html?t=sale-and-purchase&s=contents-of-a-contract&c=JP)
+### [Japan Real Estate Law:](https://www.dlapiperrealworld.com/law/index.html?t=sale-and-purchase&s=contents-of-a-contract&c=JP)
 ---
 
 # **Next Steps:** 
@@ -54,4 +54,6 @@
 ### Create lender/borrower platform to permit loans for coin purchase with APR and APY determined by machine learning programs.
 
 ### Complete vested smart contract for real estate tokens.
+
+### Include NFT gallery in app instead of using links to NFTs, metadata, etc
 
