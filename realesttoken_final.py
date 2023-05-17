@@ -62,8 +62,8 @@ property_images = {
 # Create a dictionary for the property information 
 property_info = {
         'Akasaka': 'Location: Tokyo, Akasaka district in Minato Ward. 4 minutes from Akasaka train station. Property includes land and building. Commercial zone. Est building price: $555,100,000',
-        'Chiyoda': 'Location: Tokyo, Niijuku district in Katsushika Ward. 9 minutes from Kanamachi train station. Property includes only land. Industrial zone. Est building price: $409,500,000',
-        'Niijuku': 'Location: Tokyo, Yombancho district in Chiyoda Ward.4 minutes from Ichigaya train station. Propperty includes land and building. Commercial zone. Est building price: $345,800,000',
+        'Chiyoda': 'Location: Tokyo, Yombancho district in Chiyoda Ward.4 minutes from Ichigaya train station. Propperty includes land and building. Commercial zone. Est building price: $345,800,000',
+        'Niijuku': 'Location: Tokyo, Niijuku district in Katsushika Ward. 9 minutes from Kanamachi train station. Property includes only land. Industrial zone. Est building price: $409,500,000',
     }
 
 property_options = ['Akasaka', 'Chiyoda', 'Niijuku']
