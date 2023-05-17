@@ -49,9 +49,9 @@
 
 ### [Japan Real Estate Law:](https://www.dlapiperrealworld.com/law/index.html?t=sale-and-purchase&s=contents-of-a-contract&c=JP)
 ---
-# **Real Estate Property NFT Development and Functionality:**
+# **Real Estate Property NFTs Development and Functionality:**
 
-### The purpose of min
+### The purpose of minting property-specific NFTs is to allow the real estate investors and microinvestors using our application to verify that the property-specific ERC20 tokens they are purchasing represent ownership in a real property. Each NFT was created by following the Ethereum ERC721 protocol for minting NFTs. A link to the basic tutorial is available as a link above. We used Alchemy to create our NFT project and deployed it on the Sepiola Testnet. Using Sepiola also permitted us to use the Sepiola Eth faucet. The Sepiola Eth faucet provided the test Eth used to deploy each of our NFT contracts to the Sepiola Testnet. After the initial creation of our project, we developed ERC721 contracts for each property's NFT. These contracts were created under the MIT license and permitted only a single minter.
 
 # **Next Steps:** 
 
