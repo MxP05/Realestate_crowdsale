@@ -49,6 +49,9 @@
 
 ### [Japan Real Estate Law:](https://www.dlapiperrealworld.com/law/index.html?t=sale-and-purchase&s=contents-of-a-contract&c=JP)
 ---
+# **Real Estate Property NFT Development and Functionality:**
+
+### The purpose of min
 
 # **Next Steps:** 
 
