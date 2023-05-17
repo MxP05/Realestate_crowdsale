@@ -146,8 +146,6 @@ with tab2:
     fig.update_layout(title_text=f"Token Distribution for {selected_property}")
     st.plotly_chart(fig)
 
-
-
 # Initialize user session state
     if "user_address" not in st.session_state:
         st.session_state.user_address = None

@@ -85,9 +85,9 @@ with tab2:
     }
 
     property_info = {
-        'Akasaka': 'Akasaka description and details...',
-        'Chiyoda': 'Chiyoda description and details...',
-        'Niijuku': 'Niijuku description and details...',
+        'Akasaka': 'Akasaka situated in Tokyo Minato Ward. It takes around 4 minutes to reach the Akasaka station. it is a residential land(land and building) where its region is a commercial area. Its area is 2000 and its USD trading price is 555100000.0',
+        'Chiyoda': 'Chiyoda situated in Yombacho district in Tokyo Minato Ward. The nearest station is Ichigaya, 4 minutes walk from the building. it is residential and land building where its region is commercial. Its area 2000 and its USD trading price is 345800000.0',
+        'Niijuku': 'Niijuku situated in Katsushika ward in Tokyo Minato Ward. It takes 4 minutes walk to the station Kanamachi. It is residential land(land and building) wher its region is residential area. Its area is 2000 and its USD trading price is 409500000.0',
     }
 
     property_options = ['Akasaka', 'Chiyoda', 'Niijuku']
