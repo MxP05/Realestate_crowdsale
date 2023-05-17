@@ -25,8 +25,13 @@
 ### [Ethereum NFT Dev Tutorial:](https://ethereum.org/ca/developers/tutorials/how-to-write-and-deploy-an-nft/)
 
 ### **OpenZeppelin:** Contracts for ERC721 implementation in NFT development.
+### *openzeppelin/contracts/token/ERC721/ERC721.sol
+### *openzeppelin/contracts/utils/Counters.sol
+### *openzeppelin/contracts/access/Ownable.sol
+### *openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol
 
-### **Alchemy:** Used to create real estate NFTs. Connected to Sepliola test net. Alchemy used for API key in .env file.
+### **Alchemy:** Used to create real estate NFTs. Connected to Sepliola test net. Alchemy used to create project and associated API key used in .env file.
+![Alchemy Project Creation on Sepiola Test Network](./
 
 ### **Sepiola Test Network:** Test network for execution of transactions related to NFT development. Connected to Metamask to present Sepiola Eth and NFTs in wallet and allow for minting of NFTs on test network. Sepiola also provided the eth faucet for the project development. 
 
