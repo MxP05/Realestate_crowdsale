@@ -55,6 +55,8 @@
 ![Property NFT Example Streamlit](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft%20links.jpg)
 ### NFT contract and transaction verified on Etherscan and available in application:
 ![NFT contract etherscan](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_contract.jpg)
+### Metadata Pinata IPFS for NFT contracts available as link in app:
+![NFT metadata](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_metadata.jpg)
 
 # **Next Steps:** 
 
