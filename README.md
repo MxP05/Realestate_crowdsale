@@ -57,6 +57,8 @@
 ![NFT contract etherscan](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_contract.jpg)
 ### Metadata Pinata IPFS for NFT contracts available as link in app:
 ![NFT metadata](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_metadata.jpg)
+### Blank PoC property deeds Pinata IPFS:
+![Deeds screenshot](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_blank_deeds.jpg)
 
 # **Next Steps:** 
 
