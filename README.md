@@ -18,6 +18,27 @@
 ### While Yieldstreet does not present opportunities for tokenization of real estate, they do provide users with the opportunity for real estate micro-investments with an investment minimum of $5,000.00. Yieldstreet is a private real estate investment fund, but it does provide an opportunity for users to obtain partial ownership of a specific property. However, Yieldsreet serves as strictly an investment platform, and does not create alternative income streams or allow for easy transition between ownership of properties. As a more conventional real estate investment fund, they are also subject to conventional real estate fees for purchase of properties. Their site includes the useful insight that real estate ownership is an excellent hedge against inflation as “US property prices and income have historically outpaced inflation.”
 ### [For more on Yieldstreet:](https://www.yieldstreet.com/real-estate-investing/?ad_id=652726043019&adset_id=145388436923&campaign_id=19643999464&campaign_type=search&g_acctid=323-576-2402&g_adgroupid=145388436923&g_adid=652726043019&g_adtype=search&g_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&g_campaignid=19643999464&g_keyword=realty%20investment&g_keywordid=kwd-308775751137&g_network=g&hdlt_campaign=S+-+NonBrand_Real+Estate_tCPA-Tier+1_EPB&hdlt_source=google&keyword=realty%20investment&matchtype=p&medium=cpc&placement=g&utm_campaign=NonBrand_Real%20Estate_Realty_Tier%201_PM&utm_content=responsivead&utm_medium=cpc&utm_source=Google_Search&utm_term=realty%20investment&gad=1&gclid=Cj0KCQjwu-KiBhCsARIsAPztUF16Ra0yrt51x4GW-9h2oZ6pL9mKx9prUyMxvFeaSKr1FFqX5FgYOzAaAoCMEALw_wcB)
 ---
+# **Tokenization and Smartcontracts
+RealEstate token is a fungible token that is ERC-20 compliant. This contract launches a crowdsale and token that will allow people who are interested in investing in to realestate at a fractional level.
+## Installation Guide
+Step 1 run/deploy program using Solidity for the smart contract
+step 2 take/use Realestatetoken.sol file in main folder.
+step 3 compile, in the deployment panel connect your Ganache to ur remix IDE
+step 4: deploy the realestatecrowdsale deployer
+step5: connect the token address to realestatetoken, and the crowdsale address to realestatecrowdsale
+
+congratulations u have deployed the smart contracts!
+
+![Ganache select](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/ganacheselect.png?raw=true)
+![Kaseiaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/gotodeployer.png?raw=true)
+![Token,crowdsaleaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/tokenadresscrowdsale%20address.png?raw=true)
+
+# **When u run the streamlit make sure you paste the deployed token , and crowdsale adress!!!
+
+![Crowdsaleaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/crowdsaleaddress.png?raw=true)
+![Tokenaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/token%20address.png?raw=true)
+
+
 # **Incorporated Technologies and Libraries**
 
 ## **NFT Development:** NFTs developed using the ethereum.org developer tutorial and ERC721 protocols. 
