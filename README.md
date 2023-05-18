@@ -121,3 +121,4 @@ congratulations u have deployed the smart contracts!
 ### Include NFT gallery in app instead of using links to NFTs, metadata, etc
 
 ## License Back-end front-end Dapp, used to ICO fragmental realestate tokens, ownership gets verified by NFT's ,deeds,ethscan.
+## Contributors Andre Johnson,Marc Pocorni,Jason Steiner, Bria
