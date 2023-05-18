@@ -1,6 +1,6 @@
 # **Real Estate Tokenization Project**
 
-### The goal of this project is to connect owners of real estate properties with a community of real estate micro-investors in an effort to make real estate investment accessible through a fractional ownership (FO) tokenized system. Tokenizing the real estate investment process is mutually beneficial for property owners and investors as it eliminates middle-man expenses such as brokers. In addition to expanding investment opportunities and eliminating real estate middle-men, this system would allow for expanded democratization of real estate prices. Theoretically, the minted tokens could also serve as a fiat currency backed by the value of the property they represent. 
+### The goal of this project is to connect owners of real estate properties with a community of real estate micro-investors in an effort to make real estate investment accessible through a fractional ownership (FO) tokenized system. FO is represented by a capped supply of ERC20 real estate tokens. Tokenizing the real estate investment process is mutually beneficial for property owners and investors as it eliminates middle-man expenses such as brokers. In addition to expanding investment opportunities and eliminating real estate middle-men, this system would allow for expanded democratization of real estate prices. Theoretically, the minted tokens could also serve as a fiat currency backed by the value of the property they represent. 
 ### We elected to pursue a FO tokenization because creating and entire asset (EA) ownership token would require turning a property deed into its own NFT, which is an undeveloped asset class. However, in this application we do store property info metadata and ownership deeds within an IPFS. The deployed contracts have been verified through Etherscan. Including these verified NFTs allows investors to confirm that the tokens they are purchasing are representative of fractional ownership of a specific property.  While the real estate tokens can be transferred, the property-specific NFTs cannot, preventing complications that may arise with an EA ownership token.
 ### [Source](https://www.fool.com/investing/stock-market/market-sectors/financials/non-fungible-tokens/nft-real-estate/).
 ---
@@ -52,24 +52,24 @@ congratulations u have deployed the smart contracts!
 ![Tokenaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/token%20address.png?raw=true)
 
 # Streamlit 
- Wallet connection: Click on the connect wallet button and enter your wallet address in the input field
+### Wallet connection: Click on the connect wallet button and enter your wallet address in the input field
  
- Buy tokens= Enter the amount you want to invest and click on the buy token button
+ ### Buy tokens= Enter the amount you want to invest and click on the buy token button
  
  ![streamlit-buy-connect](https://github.com/MxP05/Realestate_crowdsale/assets/118853744/b1545014-b514-4d2b-ab98-e9dd60dbff6a)
  
  
- Balanceofbutton: select the wallet you use to purchase the token and click the display wallet balance 
+ ### Balanceofbutton: select the wallet you use to purchase the token and click the display wallet balance 
  
  ![balanceofbutton](https://github.com/MxP05/Realestate_crowdsale/assets/118853744/e0803e4e-bee1-4565-b826-0d435323dc42)
 
-# Using the NFT portion of Streamlit: Select property to verify from dropdown in Property NFT tab
+### Using the NFT portion of Streamlit: Select property to verify from dropdown in Property NFT tab
 ![Property NFT Example Streamlit](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft%20links.jpg)
-# NFT contract and transaction verified on Etherscan and available in application:
+### NFT contract and transaction verified on Etherscan and available in application:
 ![NFT contract etherscan](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_contract.jpg)
-# Metadata Pinata IPFS for NFT contracts available as link in app:
+### Metadata Pinata IPFS for NFT contracts available as link in app:
 ![NFT metadata](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_metadata.jpg)
-# Blank PoC property deeds Pinata IPFS:
+### Blank PoC property deeds Pinata IPFS:
 ![Deeds screenshot](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_blank_deeds.jpg)
 
 
