@@ -30,6 +30,9 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/emission/MintedCrowdsale.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/validation/CappedCrowdsale.sol";]
 
+***************************************************************
+Warning: RealestateCrowdsale/Marc/Resources/13.CSV for the raw csv, couldnt upload file due to size , 25mb limit.
+****************************************************************
 Step 1 run/deploy program using Solidity for the smart contract
 
 step 2 take/use Realestatetoken.sol file in main folder.
