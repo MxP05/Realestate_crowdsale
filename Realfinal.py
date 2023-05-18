@@ -61,7 +61,7 @@ with tab2:
     import plotly.graph_objects as go
     from datetime import datetime
 
-# Connect to Ethereum network using Infura API
+# Connect to the local blockchain
     w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:7545"))
 
 
