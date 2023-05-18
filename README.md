@@ -42,13 +42,13 @@ congratulations u have deployed the smart contracts!
 ![Crowdsaleaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/crowdsaleaddress.png?raw=true)
 ![Tokenaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/token%20address.png?raw=true)
 
-### Using the NFT portion of Streamlit: Select property to verify from dropdown in Property NFT tab
+# Using the NFT portion of Streamlit: Select property to verify from dropdown in Property NFT tab
 ![Property NFT Example Streamlit](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft%20links.jpg)
-### NFT contract and transaction verified on Etherscan and available in application:
+# NFT contract and transaction verified on Etherscan and available in application:
 ![NFT contract etherscan](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_contract.jpg)
-### Metadata Pinata IPFS for NFT contracts available as link in app:
+# Metadata Pinata IPFS for NFT contracts available as link in app:
 ![NFT metadata](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_etherscan_metadata.jpg)
-### Blank PoC property deeds Pinata IPFS:
+# Blank PoC property deeds Pinata IPFS:
 ![Deeds screenshot](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft_blank_deeds.jpg)
 
 
