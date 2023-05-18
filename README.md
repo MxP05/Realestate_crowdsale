@@ -34,19 +34,19 @@ Step 1 run/deploy program using Solidity for the smart contract
 
 step 2 take/use Realestatetoken.sol file in main folder.
 
-step 3 compile, in the deployment panel connect your Ganache to ur remix IDE
+step 3 compile, in the deployment panel connect your Ganache to your remix IDE
 
 step 4: deploy the realestatecrowdsale deployer
 
 step5: connect the token address to realestatetoken, and the crowdsale address to realestatecrowdsale
 
-congratulations u have deployed the smart contracts!
+congratulations you have deployed the smart contracts!
 
 ![Ganache select](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/ganacheselect.png?raw=true)
 ![Kaseiaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/gotodeployer.png?raw=true)
 ![Token,crowdsaleaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/tokenadresscrowdsale%20address.png?raw=true)
 
-# **When u run the streamlit make sure you paste the deployed token , and crowdsale adress!!!
+# **When you run the streamlit make sure you paste the deployed token , and crowdsale address!!!
 
 ![Crowdsaleaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/crowdsaleaddress.png?raw=true)
 ![Tokenaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/token%20address.png?raw=true)
