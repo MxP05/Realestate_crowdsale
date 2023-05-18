@@ -52,16 +52,25 @@ congratulations u have deployed the smart contracts!
 ![Tokenaddress](https://github.com/MxP05/Realestate_crowdsale/blob/main/Screenshots/token%20address.png?raw=true)
 
 # Streamlit 
-### Wallet connection: Click on the connect wallet button and enter your wallet address in the input field
+
+**Property Selection: From the dropdown menu select the property you want to invest in 
+
+![selectporp](https://github.com/MxP05/Realestate_crowdsale/assets/118853744/bcc7d570-2bd0-401f-9e52-cbc2530050d2)
+
+
+
+### **Wallet connection: Click on the connect wallet button and enter your wallet address in the input field
  
- ### Buy tokens= Enter the amount you want to invest and click on the buy token button
+ ### **Buy tokens= Enter the amount you want to invest and click on the buy token button
  
  ![streamlit-buy-connect](https://github.com/MxP05/Realestate_crowdsale/assets/118853744/b1545014-b514-4d2b-ab98-e9dd60dbff6a)
  
  
- ### Balanceofbutton: select the wallet you use to purchase the token and click the display wallet balance 
+ ### **Balanceofbutton: select the wallet you use to purchase the token and click the display wallet balance button
  
  ![balanceofbutton](https://github.com/MxP05/Realestate_crowdsale/assets/118853744/e0803e4e-bee1-4565-b826-0d435323dc42)
+ 
+ 
 
 ### Using the NFT portion of Streamlit: Select property to verify from dropdown in Property NFT tab
 ![Property NFT Example Streamlit](https://github.com/MxP05/Realestate_crowdsale/blob/main/Jason/nft%20links.jpg)
