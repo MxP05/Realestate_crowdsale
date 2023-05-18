@@ -21,6 +21,15 @@
 # **Tokenization and Smartcontracts
 RealEstate token is a fungible token that is ERC-20 compliant. This contract launches a crowdsale and token that will allow people who are interested in investing in to realestate at a fractional level.
 ## Installation Guide
+Technologies
+[pragma solidity ^0.5.0;
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Mintable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/IERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/Crowdsale.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/emission/MintedCrowdsale.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/validation/CappedCrowdsale.sol";]
+
 Step 1 run/deploy program using Solidity for the smart contract
 
 step 2 take/use Realestatetoken.sol file in main folder.
