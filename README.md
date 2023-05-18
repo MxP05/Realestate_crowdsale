@@ -22,9 +22,13 @@
 RealEstate token is a fungible token that is ERC-20 compliant. This contract launches a crowdsale and token that will allow people who are interested in investing in to realestate at a fractional level.
 ## Installation Guide
 Step 1 run/deploy program using Solidity for the smart contract
+
 step 2 take/use Realestatetoken.sol file in main folder.
+
 step 3 compile, in the deployment panel connect your Ganache to ur remix IDE
+
 step 4: deploy the realestatecrowdsale deployer
+
 step5: connect the token address to realestatetoken, and the crowdsale address to realestatecrowdsale
 
 congratulations u have deployed the smart contracts!
